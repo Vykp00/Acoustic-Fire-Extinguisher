@@ -11,15 +11,6 @@ Goal: Be able to handle realistic situation
 Tune the ML model with cross validation for both numerical and categorical data
 
 """
-#Set up code checking
-import os
-if not os.path.exists("A_E_Fire_Dataset.csv"):
-    os.symlink("C:/Users/hello/OneDrive/Documents/AI_kaggle/Acoustic_Extinguisher_Fire_Dataset/A_E_Fire_Dataset.csv", "A_E_Fire_Dataset.csv")
-from learntools.core import binder
-binder.bind(globals())
-from learntools.ml_intermediate.ex5 import *
-print("Setup Complete")    
-    
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
